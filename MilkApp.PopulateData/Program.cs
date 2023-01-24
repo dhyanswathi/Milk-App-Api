@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MilkApp.PopulateData.Data;
 using MilkApp.PopulateData.Models;
 
 IHost host = Host.CreateDefaultBuilder(args)
@@ -13,7 +14,10 @@ IHost host = Host.CreateDefaultBuilder(args)
 })
 .Build();
 
+var path = "C:\\Users\\Mintu\\swathistudy\\pgp\\codeTest\\Milk-App-Api\\MilkApp.PopulateData\\Data\\Milk.json";
+
+var items = JsonReader.GetMilkData(path);
 var milkRepository = host.Services.GetRequiredService<MilkRepository>();
-milkRepository.Create("Arla", "Cow", 40, "dfsdfdsfssdsdfd");
+items.ForEach(x => milkRepository.Create(x.Name, x.Type,x.Storage, x.Id));
 
 host.Run();

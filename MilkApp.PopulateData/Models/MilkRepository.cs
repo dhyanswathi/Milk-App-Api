@@ -11,7 +11,7 @@ public class MilkRepository: IMilkRepository
         _context = context;
     }
 
-    public void Create(string Name, string Type, int Storage, string Id)
+    public void Create(string Name, string Type, int? Storage, string Id)
     {
         _context.Add(
             new Milk
