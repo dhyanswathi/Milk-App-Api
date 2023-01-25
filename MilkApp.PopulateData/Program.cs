@@ -14,7 +14,7 @@ IHost host = Host.CreateDefaultBuilder(args)
 })
 .Build();
 
-var path = "C:\\Users\\Mintu\\swathistudy\\pgp\\codeTest\\Milk-App-Api\\MilkApp.PopulateData\\Data\\Milk.json";
+var path = $"{Environment.CurrentDirectory}..\\..\\..\\..\\..\\data\\Milk.json";
 
 var items = JsonReader.GetMilkData(path);
 var milkRepository = host.Services.GetRequiredService<MilkRepository>();

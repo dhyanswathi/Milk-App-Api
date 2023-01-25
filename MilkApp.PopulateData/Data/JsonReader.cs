@@ -15,7 +15,6 @@ namespace MilkApp.PopulateData.Data
             public List<Milk> Results { get; set; }
         }
 
-       
         public static List<Milk> GetMilkData(string path)
         {
             var json = File.ReadAllText(path);
