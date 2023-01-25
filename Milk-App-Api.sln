@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkApp.PopulateData", "Mil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milk.Api", "Milk.Api\Milk.Api.csproj", "{75265401-912B-4AB9-B74A-46C131BFE38C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milk.Api.Tests", "Milk.Api.Tests\Milk.Api.Tests.csproj", "{16DA6FB1-91D2-4F91-A375-62AC2F792A49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{75265401-912B-4AB9-B74A-46C131BFE38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75265401-912B-4AB9-B74A-46C131BFE38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75265401-912B-4AB9-B74A-46C131BFE38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16DA6FB1-91D2-4F91-A375-62AC2F792A49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16DA6FB1-91D2-4F91-A375-62AC2F792A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16DA6FB1-91D2-4F91-A375-62AC2F792A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16DA6FB1-91D2-4F91-A375-62AC2F792A49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
