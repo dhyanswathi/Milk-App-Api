@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilkApp.PopulateData", "MilkApp.PopulateData\MilkApp.PopulateData.csproj", "{B09CD1CF-C186-4B3D-AF08-B957981BF8EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Milk.Api", "Milk.Api\Milk.Api.csproj", "{75265401-912B-4AB9-B74A-46C131BFE38C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B09CD1CF-C186-4B3D-AF08-B957981BF8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B09CD1CF-C186-4B3D-AF08-B957981BF8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B09CD1CF-C186-4B3D-AF08-B957981BF8EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75265401-912B-4AB9-B74A-46C131BFE38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75265401-912B-4AB9-B74A-46C131BFE38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75265401-912B-4AB9-B74A-46C131BFE38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75265401-912B-4AB9-B74A-46C131BFE38C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
