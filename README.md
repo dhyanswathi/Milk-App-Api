@@ -28,3 +28,12 @@ If you have time over here are some more parts you can add
 - Pagination; There are 99 products, so to divide the products to pages could be good 
 - A cart; maybe the customer wants many different types of products. So a cart and checkout page could be useful!
 - Deploy your application!
+
+## How to run the app
+Clone this repo and run these commands in terminal
+```
+cd Milk.Api
+dotnet restore
+dotnet run
+```
+This will get your API and Database up and running. Now go to the frontend repo and follow the instructions to run the application.
