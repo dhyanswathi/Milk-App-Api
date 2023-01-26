@@ -19,11 +19,11 @@ namespace Milk.Api.Data
         {
         }
 
-        public virtual DbSet<Milk> Milk { get; set; }
+        public virtual DbSet<Models.Milk> Milk { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Milk>(entity =>
+            modelBuilder.Entity<Models.Milk>(entity =>
             {
                 entity.Property(e => e.Id)
                     .HasMaxLength(255)
