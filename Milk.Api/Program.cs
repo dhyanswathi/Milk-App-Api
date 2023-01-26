@@ -1,4 +1,4 @@
-using Milk.Api.Data;
+using Milk.Api.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSqlServer<MilkDBContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
+
+builder.Services.AddDbContext<MilkDBContext>();
+builder.Services.AddTransient<MilkRepository>();
 
 var app = builder.Build();
 

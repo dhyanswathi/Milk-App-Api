@@ -4,9 +4,8 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Milk.Api.Models;
 
-namespace Milk.Api.Data
+namespace Milk.Api.Models
 {
     public partial class MilkDBContext : DbContext
     {
@@ -19,11 +18,11 @@ namespace Milk.Api.Data
         {
         }
 
-        public virtual DbSet<Models.Milk> Milk { get; set; }
+        public virtual DbSet<Milk> Milk { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Models.Milk>(entity =>
+            modelBuilder.Entity<Milk>(entity =>
             {
                 entity.Property(e => e.Id)
                     .HasMaxLength(255)
