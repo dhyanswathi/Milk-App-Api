@@ -8,9 +8,9 @@ namespace Milk.Api.Controllers
     [ApiController]
     public class MilksController : ControllerBase
     {
-        private MilkRepository _repo;
+        private IMilkRepository _repo;
 
-        public MilksController(MilkRepository repo) => _repo = repo;
+        public MilksController(IMilkRepository repo) => _repo = repo;
 
         [HttpGet]
         public IActionResult GetMilks()

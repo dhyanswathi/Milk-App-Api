@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSqlServer<MilkDBContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
 
 builder.Services.AddDbContext<MilkDBContext>();
-builder.Services.AddTransient<MilkRepository>();
+builder.Services.AddTransient<IMilkRepository, MilkRepository>();
 
 var app = builder.Build();
 
