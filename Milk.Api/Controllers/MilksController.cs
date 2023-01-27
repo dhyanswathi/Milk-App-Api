@@ -14,7 +14,7 @@ namespace Milk.Api.Controllers
         public MilksController(IMilkRepository repo) => _repo = repo;
 
         [HttpGet]
-        [SampleFilter]
+        //[SampleFilter]
         public IActionResult GetMilks()
         {
             var result = _repo.GetAll();
