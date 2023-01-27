@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Milk.Api.Models;
+using Milk.Api.Filters;
 
 namespace Milk.Api.Controllers
 {
@@ -13,6 +14,7 @@ namespace Milk.Api.Controllers
         public MilksController(IMilkRepository repo) => _repo = repo;
 
         [HttpGet]
+        [SampleFilter]
         public IActionResult GetMilks()
         {
             var result = _repo.GetAll();
