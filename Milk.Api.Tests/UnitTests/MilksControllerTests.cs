@@ -4,7 +4,6 @@ using Milk.Api.Controllers;
 using Milk.Api.Models;
 using Milk.Api.Tests.MockData;
 using Moq;
-using Xunit;
 
 namespace Milk.Api.Tests.UnitTests
 {
